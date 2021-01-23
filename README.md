@@ -24,26 +24,7 @@ The statistics.py file first loads the data from all the .txt files and stores t
 Lastly, the Wilcoxon-Mann-Whitney test offers an option to specify whether to use a one-side (both sides) or a two-sided test. We have chosen the type of alternative hypothesis based on findings drom the paper of Mutthulakshmi et al. (2020). The comments in the statistics.py file should provide sufficient information to interpret the findings.
 
 
-Modules that were used in this project: (hier moeten dus nog versies van alle modules bij worden gezet enzo)
 
-matplotlib.pyplot
-
-numpy
-
-random
-
-math
-
-json
-
-pylab
-
-scipy.stats
-
-seaborn
-
-
-Version of python used and the version of the used modules
 
 
 
