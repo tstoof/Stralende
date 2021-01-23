@@ -10,9 +10,9 @@
 
                     #### IMPORT MODULES AND DEFINE FUNCTIONS ####
 
+
 import matplotlib.pyplot as plt 
 import numpy as np
-import random
 import math
 import json
 from matplotlib import colors
@@ -152,6 +152,11 @@ V = 8 # m/s
 # set repeats to 1 for visualisation of simulation
 repeats = 1
 time = 14
+
+# choose to write/append data to txt file or not
+# 0 = does not write/append data
+# 1 = writes/appends data
+write_to_file = 0
 
 # lists for statistics
 burning_list = []
@@ -636,9 +641,11 @@ for repeat in range(repeats):
 
 # only use if you want to change the data files
 # and append new data values to file
-# append fraction burnt data to file
-# with open(filename + ".txt", 'a') as f:
-#     f.write(str(burnt_list)+"\n")
+if write_to_file == 1:
+    with open(filename + ".txt", 'a') as f:
+        
+        # append fraction burnt data to file
+        f.write(str(burnt_list)+"\n")
 
 # create visual final result of simulation
 if repeats == 1:
